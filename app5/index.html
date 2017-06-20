@@ -1,7 +1,17 @@
-<html>
-	<body>
-		Something
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="myApp">
+	<body ng-controller="myCtrl">
+		<h3>Character Info</h3>
+		<table>
+			<tr ng-repeat="(key, value) in person track by $index">
+				<td>{{key}}</td>
+				<td>{{value}}</td>
+			</tr>
+		</table>
+		<br>
+		<button type="button" href="#" ng-click="getPrevious()" ng-disabled="index === 1">Get Previous Person</button>
+
+		<button type="button" href="#" ng-click="getNext()">Get Next Person</button>
+				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

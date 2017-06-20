@@ -1,6 +1,21 @@
-<html>
-	<body>
-		Something
+<html ng-app="myApp">
+	<body ng-controller="myCtrl">
+		<input type="text" ng-model="filterText" placeholder="Enter search text...">
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Date Employed</th>
+				<th>Phone</th>
+			</tr>
+			<tr ng-repeat="person in myData | filter: filterText">
+				<td>{{ person.name }}</td>
+				<td>{{ person.email }}</td>
+				<td>{{ person.dateEmployed }}</td>
+				<td>{{ person.phone }}</td>
+			</tr>
+		</table>
+
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

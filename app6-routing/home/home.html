@@ -1,0 +1,8 @@
+<h2><small>Choose a Character:</small></h2>
+<ul class="list-unstyled">
+  <li ng-repeat="character in characters">
+  <a ng-click="showCharacter(character)">{{character.name}}</a>
+  </li>
+</ul>
+<button class="btn btn-default" type="button" ng-click="getPrev()">Get previous</button>
+<button class="btn btn-default" type="button" ng-click="getNext()">Get next</button>

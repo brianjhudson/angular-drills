@@ -1,9 +1,21 @@
-<html>
-	<body>
-		<h1>app6 - routing</h1>
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<html ng-app="mainApp">
+	<head>
+		<title>Star Wars Data</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css" media="screen" title="no title">
+	</head>
+	<body ng-controller="mainCtrl">
+		<div class="container">
+			<h2 class="page-header">Star Wars Data</h2>
+			<div ui-view></div>
+		</div>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" charset="utf-8"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
 		<script src="app.js"></script>
-		<script src="controller.js"></script>
-		<script src="service.js"></script>
+		<script src="main-ctrl.js" charset="utf-8"></script>
+		<script src="mainService.js"></script>
+
 	</body>
 </html>

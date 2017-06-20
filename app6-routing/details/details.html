@@ -1,0 +1,14 @@
+<button class="btn btn-default" type="button" ui-sref="home">Back to All Characters</button>
+<h2>{{character.name}}</h2>
+<h2><small>Character Info</small></h2>
+
+<table class="table table-striped">
+  <tr ng-repeat="(key, value) in character">
+    <td>{{key}}</td>
+    <td>{{value}}</td>
+  </tr>
+</table>
+<!-- <br>
+<button type="button" href="#" ng-click="getPrevious()" ng-disabled="index === 1">Get Previous Person</button>
+
+<button type="button" href="#" ng-click="getNext()">Get Next Person</button> -->

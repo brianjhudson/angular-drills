@@ -1,6 +1,9 @@
-<html>
-	<body>
-	
+<html ng-app="myApp">
+	<body ng-controller="myCtrl">
+		<textarea rows="4" cols="40" ng-model="text"></textarea>
+		<br>
+		<button ng-click="clearText()" type="button">Clear text</button>
+		<p>{{text}}</p>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
